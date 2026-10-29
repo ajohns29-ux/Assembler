@@ -17,6 +17,13 @@ Instruction::InstructionType Instruction::ParseInstruction( string a_line )
     }
 
 	// what makes an instruction a machine language instruction, assembly language, or end statement
+	// if label is end, instruction is a end statement
+	if(m_Label == "END")
+	{
+		return Instruction::ST_End;
+	}
+
+	// 
     return Instruction::ST_MachineLanguage;
   
 }
