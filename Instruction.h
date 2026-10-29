@@ -25,7 +25,21 @@ public:
     // Compute the location of the next instruction.
     int LocationNextInstruction( int a_loc ) 
     {
-        // AIDAN
+        // if label is ds, save space for label
+        if( m_Label == "DS")
+        {
+            return a_loc + m_Operand1;
+        }
+        
+        // if opcode is b, go to location of operand 1
+
+        // if opcode is bm and operand 2 < 0, go to location of operand 1
+
+        // if opcode is bz and operand 2 = 0, go to location of operand 1
+
+        // if opcode is bp and operand 2 > 0, go to location of operand 1
+
+        // if anything else, go to next storage location
         return a_loc + 1;
     }
 
