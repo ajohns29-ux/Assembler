@@ -24,13 +24,15 @@ Instruction::InstructionType Instruction::ParseInstruction( string a_line )
 		return Instruction::ST_End;
 	}
 
-	// if the first character of the label is a character, the instruction is a assembely instruction
-	if( m_Label[0] >= 'A' && m_Label[0] <= 'Z')
+	// if the first character of the label is a number, the instruction is a machine language instruction
+	if( m_Label[0] >= '0' && m_Label[0] <= '9')
 	{
-		return Instruction::Assembley
+		return Instruction::ST_MachineLanguage;
 	}
-	
-    return Instruction::ST_MachineLanguage;
+
+	// in any other case, assume the instruction is an assembler instruction
+	return Instruction::ST_AssemblerInstr;
+   
   
 }
 
