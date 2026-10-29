@@ -15,6 +15,8 @@ Instruction::InstructionType Instruction::ParseInstruction( string a_line )
     {
         return Instruction::ST_Comment;
     }
+
+	// what makes an instruction a machine language instruction, assembly language, or end statement
     return Instruction::ST_MachineLanguage;
   
 }
