@@ -6,24 +6,30 @@
 
 Instruction::InstructionType Instruction::ParseInstruction( string a_line )
 {
+	// remove comments from instruction
     string line = RemoveComment(a_line);
     
     // Break line into lable, opt code, and up two operands
     ParseLine(line, m_Label, m_OpCode, m_Operand1, m_Operand2);
-    
+
+	// if there is no opt code, the instruction is a comment
     if(m_OpCode.empty() )
     {
         return Instruction::ST_Comment;
     }
 
-	// what makes an instruction a machine language instruction, assembly language, or end statement
-	// if label is end, instruction is a end statement
-	if(m_Label == "END")
+	// if the opcode has END, the instuction is the end instruction
+	if(m_OpCode == "END")
 	{
 		return Instruction::ST_End;
 	}
 
-	// 
+	// if the first character of the label is a character, the instruction is a assembely instruction
+	if( m_Label[0] >= 'A' && m_Label[0] <= 'Z')
+	{
+		return Instruction::Assembley
+	}
+	
     return Instruction::ST_MachineLanguage;
   
 }
