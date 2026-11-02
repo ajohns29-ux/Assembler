@@ -45,6 +45,15 @@ public:
                     m_memory[operand1] += m_memory[operand2];
                     loc++;
                     continue;
+                case 10:
+                    if(m_memory[operand2] < 0)
+                    {
+                        loc = operand1;
+                    }
+                    else
+                    {
+                        loc++;
+                    }
                 default:
                     break;
             }
