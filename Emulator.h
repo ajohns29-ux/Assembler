@@ -36,13 +36,6 @@ public:
          m_memory.resize(MEMSZ, 0);
     }
 
-    /// Insert data into memory location of the emulator.
-    /// The location where the contens will be recorded.
-    /// Value to be recorded in memory.
-    /// Return true if successful
-
-    // Records instructions and data into simulated memory.
-
     /**/
     /*
     
