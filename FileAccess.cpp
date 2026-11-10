@@ -47,6 +47,27 @@ FileAccess::FileAccess( int argc, char *argv[] )
     }
 }
 
+/**/
+/*
+
+NAME	
+
+    ~FileAccess()
+
+SYNOPSIS
+
+    FileAccess::~FileAccess()
+
+DESRIPTION
+
+    This function is a deconstructor that ensures that the file will be closed when the program terminates. 
+
+RETURNS
+
+    No return value
+
+*/
+/**/
 FileAccess::~FileAccess( )
 {
     // Not that necessary in that the file will be closed when the program terminates, but good form.
