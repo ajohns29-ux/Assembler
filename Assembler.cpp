@@ -16,8 +16,29 @@ Assembler::Assembler( int argc, char *argv[] )
 Assembler::~Assembler( )
 {
 }
-// Pass I establishes the location of the labels.  You will write better function comments according to the coding standards.
-void Assembler::PassI( ) 
+
+/**/
+/*
+
+NAME	
+
+	Assmbler::PassI()
+
+SYNOPSIS
+
+	void Assembler::PassI()
+
+DESRIPTION
+
+	This function establishes the location of the labels. Each line is retrieved and parsed to find its instruction type.
+
+RETURNS
+
+	No return value
+
+*/
+/**/
+void Assembler::PassI() 
 {
     int loc = 0;        // Tracks the location of the instructions to be generated.
 
