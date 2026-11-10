@@ -1,5 +1,5 @@
 /*
- * Assembler main program.
+ * Assembler main program that runs the assembler and emulator.
  */
 #include "stdafx.h"     // This must be present if you use precompiled headers which you will use. 
 #include <stdio.h>
