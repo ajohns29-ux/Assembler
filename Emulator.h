@@ -65,7 +65,7 @@ public:
     
     DESRIPTION
     
-        This program runs the program recorded in memory. Each line in memory is split into its parts and the opcode dertermines what happens to the operands. 
+        This function runs the program recorded in memory. Each line in memory is split into its parts and the opcode dertermines what happens to the operands. 
     
     RETURNS
     
