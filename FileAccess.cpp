@@ -46,12 +46,36 @@ FileAccess::FileAccess( int argc, char *argv[] )
         exit( 1 ); 
     }
 }
+
 FileAccess::~FileAccess( )
 {
     // Not that necessary in that the file will be closed when the program terminates, but good form.
     m_sfile.close( );
 }
-// Get the next line from the file.
+
+/**/
+/*
+
+NAME	
+
+    FileAccess::GetNextLine()
+
+SYNOPSIS
+
+    bool FileAccess::GetNextLine( string &a_line)
+
+    &a_line -> current line inside the file
+
+DESRIPTION
+
+    This program gets the next line from the file and checks if the end of the input file has been reached.
+
+RETURNS
+
+    Returns true if a new line was retrieved and returns false if the end of the file has been met.
+
+*/
+/**/
 bool FileAccess::GetNextLine( string &a_line )
 {
     // If there is no more data, return false.
@@ -64,6 +88,7 @@ bool FileAccess::GetNextLine( string &a_line )
     // Return indicating success.
     return true;
 }
+
 void FileAccess::rewind( )
 {
     // Clean all file flags and go back to the beginning of the file.
