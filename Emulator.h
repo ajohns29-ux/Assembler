@@ -29,8 +29,28 @@ public:
         m_memory[a_location] = a_contents;
         return true;
     } 
+
+    /**/
+    /*
     
-    // Runs the program recorded in memory.
+    NAME	
+    
+    	runProgram( )
+    
+    SYNOPSIS
+    
+    	bool runProgram( )
+    
+    DESRIPTION
+    
+        This program runs the program recorded in memory. Each line in memory is split into its parts and the opcode dertermines what happens to the operands. 
+    
+    RETURNS
+    
+        Returns true if the program runs completly through and returns false if the program in memory contains errors. 
+    
+    */
+    /**/
     bool runProgram( )
     {
         int loc = 100;
