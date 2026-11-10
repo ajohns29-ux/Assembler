@@ -4,7 +4,30 @@
 #include "stdafx.h"
 #include "FileAccess.h"
 
-// Don't forget to comment the function headers.
+/**/
+/*
+
+NAME	
+
+    FileAccess::FileAccess()
+
+SYNOPSIS
+
+    FileAccess::FileAccess( int argc, char *argv[] )
+
+    argc -> the number of arguments 
+    *argv[] -> the value of each argument
+
+DESRIPTION
+
+    The function is a constructor that checks that the correct number of files have been used and opens the file containing the assembler input.
+
+RETURNS
+
+    No return value 
+
+*/
+/**/
 FileAccess::FileAccess( int argc, char *argv[] )
 {
     // Check that there is exactly one run time parameter.
