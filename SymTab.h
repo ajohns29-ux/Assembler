@@ -1,5 +1,5 @@
 //
-//		Symbol table class.
+//		Symbol table class that stores all the symbols and their locations.
 //
 #pragma once
 
