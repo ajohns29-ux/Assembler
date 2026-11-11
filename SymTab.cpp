@@ -7,21 +7,25 @@
 /*
 NAME
 
-    AddSymbol - adds a new symbol to the symbol table.
+    SymbolTable::AddSymbol()
 
 SYNOPSIS
 
-    void AddSymbol( const string &a_symbol, int a_loc );
-    	a_symbol	-> The name of the symbol to be added to the symbol table.
-    	a_loc		-> the location to be associated with the symbol.
+    void SymbolTable::AddSymbol( const string &a_symbol, int a_loc )
+    
+    a_symbol -> The name of the symbol to be added to the symbol table.
+    a_loc -> the location to be associated with the symbol.
 
 DESCRIPTION
 
-    This function will place the symbol "a_symbol" and its location "a_loc"
-    in the symbol table.
+    This function will place the symbol "a_symbol" and its location "a_loc" in the symbol table.
+
+RETURNS
+
+    No return value
+
 */
-void 
-SymbolTable::AddSymbol( const string &a_symbol, int a_loc )
+void SymbolTable::AddSymbol( const string &a_symbol, int a_loc )
 {
     // If the symbol is already in the symbol table, record it as multiply defined.
     map<string, int>::iterator st = m_symbolTable.find( a_symbol );
