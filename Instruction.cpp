@@ -4,6 +4,29 @@
 #include <string>
 #include <algorithm>
 
+/**/
+/*
+
+NAME	
+
+	Instruction::ParseInstruction()
+
+SYNOPSIS
+
+	Instruction::InstructionType Instruction::ParseInstruction( string a_line )
+
+	a_line -> the current line to be parsed
+
+DESRIPTION
+
+	This function determines the instruction type of an instruction by parsing it into its parts.
+    
+RETURNS
+
+	Returns the type of instruction the current line is. This means a comment, end, machine language, or assembly instruction.
+
+*/
+/**/
 Instruction::InstructionType Instruction::ParseInstruction( string a_line )
 {
 	// remove comments from instruction
@@ -36,6 +59,29 @@ Instruction::InstructionType Instruction::ParseInstruction( string a_line )
   
 }
 
+/**/
+/*
+
+NAME	
+
+	Instruction::RemoveComment()
+
+SYNOPSIS
+
+	string Instruction::RemoveComment(const string& line)
+
+	&line -> current instruction that may have a comment
+	
+DESRIPTION
+
+	This function removes the comments from the current instruction by finding the semicolon and removing everything after it. 
+    
+RETURNS
+
+	Returns a string of the same instruction without the comment. 
+
+*/
+/**/
 string Instruction::RemoveComment(const string& line) 
 {
     size_t pos = line.find(';');
@@ -49,7 +95,33 @@ string Instruction::RemoveComment(const string& line)
     return temp.erase(pos);
 }
 
-// Will parse a line into label, op code, and operand.
+/**/
+/*
+
+NAME	
+
+	Instruction::ParseLine()
+
+SYNOPSIS
+
+	bool Instruction::ParseLine(string line, string &label, string& opcode, string& operand1, string &operand2)
+
+	line -> current line of instruction
+	&label -> variable to store the label of the instruction
+	&opcode -> variable to store the opcode of the instruction
+	&operand1 -> variable to store the first operand of the instruction
+	&operand2 -> variable to store the seconds operand of the instruction
+
+DESRIPTION
+
+	This function parses a line into label, opcode, and operands using istringstream.
+    
+RETURNS
+
+	Returns true if the second operand was the end of the instruction and returns false if the second operand was not at the end of the instruction. In other words, the function returns if the current instruction is in the correct format.
+
+*/
+/**/
 bool Instruction::ParseLine(string line, string &label, string& opcode, string& operand1, string &operand2 )
 {
 	// Replace commas with blanks.  I will leave this for you to figure out how to do it.
