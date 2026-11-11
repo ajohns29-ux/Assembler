@@ -110,6 +110,27 @@ bool FileAccess::GetNextLine( string &a_line )
     return true;
 }
 
+/**/
+/*
+
+NAME	
+
+    FileAccess::rewind( )
+
+SYNOPSIS
+
+    void FileAccess::rewind( )
+
+DESRIPTION
+
+    This function rewinds back to the beginning of the file by clearing flags and moves the pointer back to the start of the file. 
+
+RETURNS
+
+    No return value
+
+*/
+/**/
 void FileAccess::rewind( )
 {
     // Clean all file flags and go back to the beginning of the file.
