@@ -22,6 +22,29 @@ public:
     // Parse the Instruction.
     InstructionType ParseInstruction( string a_line );
 
+    /**/
+    /*
+    
+    NAME	
+    
+    	LocationNextInstruction()
+    
+    SYNOPSIS
+    
+    	int LocationNextInstruction( int a_loc )
+        
+    	a_loc -> The current location of the instruction
+    
+    DESRIPTION
+    
+    	This function computes the location of the next instruction based on the opcode.
+        
+    RETURNS
+    
+    	Returns the integer position of the next instruction. 
+    
+    */
+    /**/
     // Compute the location of the next instruction.
     int LocationNextInstruction( int a_loc ) 
     {
@@ -48,6 +71,7 @@ public:
 
         return m_Label;
     };
+
     // To determine if a label is blank.
     inline bool isLabel( ) {
 
