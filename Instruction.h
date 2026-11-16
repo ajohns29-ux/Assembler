@@ -51,7 +51,7 @@ public:
         // if label is ds, save space for label
         if( m_Label == "DS")
         {
-            return a_loc + m_Operand1;
+            // return a_loc + ;
         }
         
         // if opcode is b, go to location of operand 1
