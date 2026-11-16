@@ -17,13 +17,10 @@ public:
     ~Assembler( );
 
     // Pass I - establish the locations of the symbols
-    void PassI( ) 
-    {
-        cout << "AIDAN" << endl;
-    }
+    void PassI();
 
     // Pass II - generate a translation
-    void PassII( );
+    void PassII() { cout << "TO DO" << endl; }
 
     // Display the symbols in the symbol table.
     void DisplaySymbolTable() { m_symtab.DisplaySymbolTable(); }
