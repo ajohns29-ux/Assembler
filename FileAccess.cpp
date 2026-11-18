@@ -128,7 +128,7 @@ NAME
 
 SYNOPSIS
 
-    void FileAccess::rewind( )
+    void FileAccess::Rewind( )
 
 DESRIPTION
 
@@ -140,7 +140,7 @@ RETURNS
 
 */
 /**/
-void FileAccess::rewind( )
+void FileAccess::Rewind( )
 {
     // Clean all file flags and go back to the beginning of the file.
     m_sfile.clear();
