@@ -29,7 +29,8 @@ void SymbolTable::AddSymbol( const string &a_symbol, const int a_loc )
 {
     // If the symbol is already in the symbol table, record it as multiply defined.
     map<string, int>::iterator st = m_symbolTable.find( a_symbol );
-    if( st != m_symbolTable.end() ) {
+    if( st != m_symbolTable.end() ) 
+    {
 
         st->second = multiplyDefinedSymbol;
         return;
