@@ -5,7 +5,7 @@
 #define _EMULATOR_H
 
 // class that stores the memory of the instructions
-class emulator {
+class Emulator {
 
 public:
 
@@ -16,7 +16,7 @@ public:
     
     NAME	
     
-    	emulator()
+    	Emulator()
     
     SYNOPSIS
     
@@ -32,7 +32,7 @@ public:
     
     */
     /**/
-    emulator() 
+    Emulator() 
     {
 
          m_memory.resize(MEMSZ, 0);
