@@ -58,6 +58,9 @@ Instruction::InstructionType Instruction::ParseInstruction( string a_line )
    
   
 }
+/* Instruction::InstructionType Instruction::ParseInstruction( string a_line ) /* 
+
+
 
 /**/
 /*
@@ -94,6 +97,9 @@ string Instruction::RemoveComment(const string& line)
 
     return temp.erase(pos);
 }
+/* string Instruction::RemoveComment(const string& line) */ 
+
+
 
 /**/
 /*
@@ -141,3 +147,4 @@ bool Instruction::ParseLine(string line, string &label, string& opcode, string& 
 
     return extra == "";
 }
+/* bool Instruction::ParseLine(string line, string &label, string& opcode, string& operand1, string &operand2 ) */ 
