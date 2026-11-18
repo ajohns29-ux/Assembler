@@ -11,8 +11,7 @@ public:
     Instruction( ) { };
     ~Instruction( ) { };
 
-    // Codes to indicate the type of instruction we are processing.  Why is this inside the
-    // class?  We should make this an enum class.  We will do this during a lecture.
+    // Codes to indicate the type of instruction we are processing.
     enum InstructionType {
         ST_MachineLanguage, 	// A machine language instruction.
         ST_AssemblerInstr,      // Assembler Language instruction.
