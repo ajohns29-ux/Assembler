@@ -10,31 +10,32 @@
 #include "Emulator.h"
 
 // class that runs an assembler, accesses it's symbol table, and use it's emulator
-class Assembler {
+class Assembler 
+{
 
-public:
-    Assembler( int argc, char *argv[] );
-    ~Assembler( );
-
-    // Pass I - establish the locations of the symbols
-    void PassI();
-
-    // Pass II - generate a translation
-    void PassII() { cout << "TO DO" << endl; }
-
-    // Display the symbols in the symbol table.
-    void DisplaySymbolTable() { m_symtab.DisplaySymbolTable(); }
+    public:
+        Assembler( int argc, char *argv[] );
+        ~Assembler( );
     
-    // Run emulator on the translation.
-    void RunProgramInEmulator()
-    {
-        cout << "AIDAN" << endl;
-    }
-
-private:
-
-    FileAccess m_facc;	    // File Access object
-    SymbolTable m_symtab;   // Symbol table object
-    Instruction m_inst;	    // Instruction object
-    Emulator m_emul;        // Emulator object
+        // Pass I - establish the locations of the symbols
+        void PassI();
+    
+        // Pass II - generate a translation
+        void PassII() { cout << "TO DO" << endl; }
+    
+        // Display the symbols in the symbol table.
+        void DisplaySymbolTable() { m_symtab.DisplaySymbolTable(); }
+        
+        // Run emulator on the translation.
+        void RunProgramInEmulator()
+        {
+            cout << "AIDAN" << endl;
+        }
+    
+    private:
+    
+        FileAccess m_facc;	    // File Access object
+        SymbolTable m_symtab;   // Symbol table object
+        Instruction m_inst;	    // Instruction object
+        Emulator m_emul;        // Emulator object
 };
