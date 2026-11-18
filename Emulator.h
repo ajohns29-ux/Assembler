@@ -1,5 +1,5 @@
 //
-//		Emulator class - supports the emulation of Duck2200 programs
+//		Emulator class - supports the emulation of VC1620 programs
 //
 #ifndef _EMULATOR_H      // UNIX way of preventing multiple inclusions.
 #define _EMULATOR_H
