@@ -46,6 +46,9 @@ FileAccess::FileAccess( int argc, char *argv[] )
         exit( 1 ); 
     }
 }
+/* FileAccess::FileAccess( int argc, char *argv[] ) */ 
+
+
 
 /**/
 /*
@@ -73,6 +76,9 @@ FileAccess::~FileAccess( )
     // Not that necessary in that the file will be closed when the program terminates, but good form.
     m_sfile.close( );
 }
+/* FileAccess::~FileAccess( ) */ 
+
+
 
 /**/
 /*
@@ -109,6 +115,9 @@ bool FileAccess::GetNextLine( string &a_line )
     // Return indicating success.
     return true;
 }
+/* bool FileAccess::GetNextLine( string &a_line ) */ 
+
+
 
 /**/
 /*
@@ -137,4 +146,5 @@ void FileAccess::rewind( )
     m_sfile.clear();
     m_sfile.seekg( 0, ios::beg );
 }
+/* void FileAccess::rewind( ) */ 
     
