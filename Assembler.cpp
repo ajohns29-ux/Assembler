@@ -70,7 +70,7 @@ void Assembler::PassI()
 		
         // If the instruction has a label, record it and its location in the
         // symbol table.
-        if( m_inst.isLabel( ) ) {
+        if( m_inst.IsLabel( ) ) {
 
             m_symtab.AddSymbol( m_inst.GetLabel( ), loc );
         }
