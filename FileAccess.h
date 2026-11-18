@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <string>
 
+// class allows program to access and read the file that holds the VC1620 code 
 class FileAccess {
 
 public:
