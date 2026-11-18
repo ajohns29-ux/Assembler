@@ -3,8 +3,6 @@
 //
 #pragma once
 
-
-
 // Allows full details of symbols in assmbler to be in one place
 class SymbolTable 
 {
