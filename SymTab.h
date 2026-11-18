@@ -13,7 +13,8 @@ public:
     // Get rid of constructor and destructor later if you don't need them.
     SymbolTable( ) {};
     ~SymbolTable( ) {};
-    
+
+    // May need to remove??
     const int multiplyDefinedSymbol = -999;
 
     // Add a new symbol to the symbol table.
