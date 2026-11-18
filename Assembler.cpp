@@ -67,12 +67,14 @@ void Assembler::PassI()
         {
         	continue;
 	    }
+		
         // If the instruction has a label, record it and its location in the
         // symbol table.
         if( m_inst.isLabel( ) ) {
 
             m_symtab.AddSymbol( m_inst.GetLabel( ), loc );
         }
+		
         // Compute the location of the next instruction.
         loc = m_inst.LocationNextInstruction( loc );
     }
