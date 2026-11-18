@@ -1,4 +1,7 @@
- /**/
+#include "Emulator.h"
+#include "stdfax.h"
+
+/**/
   /*
   
   NAME	
