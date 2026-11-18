@@ -10,35 +10,12 @@ class Emulator {
 public:
 
     const static int MEMSZ = 100'000;	// The size of the memory of the Duck2200.
-
-    /**/
-    /*
     
-    NAME	
-    
-    	Emulator()
-    
-    SYNOPSIS
-    
-    	Emulator()
-    
-    DESRIPTION
-    
-       This function is a consturctor that resizes the emulator to have 100000 spaces all set to 0.
-    
-    RETURNS
-    
-        No return value
-    
-    */
-    /**/
+    // This function is a consturctor that resizes the emulator to have 100000 spaces all set to 0.
     Emulator() 
     {
-
          m_memory.resize(MEMSZ, 0);
     }
-    /*  Emulator() */
-
 
     /**/
     /*
