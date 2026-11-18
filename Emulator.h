@@ -4,6 +4,7 @@
 #ifndef _EMULATOR_H      // UNIX way of preventing multiple inclusions.
 #define _EMULATOR_H
 
+// class that stores the memory of the instructions
 class emulator {
 
 public:
