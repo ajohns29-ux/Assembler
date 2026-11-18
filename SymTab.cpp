@@ -25,7 +25,7 @@ RETURNS
     No return value
 
 */
-void SymbolTable::AddSymbol( const string &a_symbol, int a_loc )
+void SymbolTable::AddSymbol( const string &a_symbol, const int a_loc )
 {
     // If the symbol is already in the symbol table, record it as multiply defined.
     map<string, int>::iterator st = m_symbolTable.find( a_symbol );
