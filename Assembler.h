@@ -9,7 +9,7 @@
 #include "FileAccess.h"
 #include "Emulator.h"
 
-
+// class that runs an assembler, accesses it's symbol table, and 
 class Assembler {
 
 public:
