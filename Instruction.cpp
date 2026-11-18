@@ -153,3 +153,50 @@ bool Instruction::ParseLine(string a_line, string &a_label, string& a_opcode, st
     return extra == "";
 }
 /* bool Instruction::ParseLine(string a_line, string &a_label, string& a_opcode, string& a_operand1, string &a_operand2 ) */ 
+
+
+
+/**/
+/*
+
+NAME	
+
+	Instruction::LocationNextInstruction()
+
+SYNOPSIS
+
+	int Instruction::LocationNextInstruction( int a_loc )
+	
+	a_loc -> The current location of the instruction
+
+DESRIPTION
+
+	This function computes the location of the next instruction based on the opcode.
+	
+RETURNS
+
+	Returns the integer position of the next instruction. 
+
+*/
+/**/
+int Instruction::LocationNextInstruction( int a_loc ) 
+{
+	// if label is ds, save space for label
+	if( m_Label == "DS")
+	{
+		// return a_loc + ;
+	}
+	
+	// if opcode is b, go to location of operand 1
+
+	// if opcode is bm and operand 2 < 0, go to location of operand 1
+
+	// if opcode is bz and operand 2 = 0, go to location of operand 1
+
+	// if opcode is bp and operand 2 > 0, go to location of operand 1
+
+	// if anything else, go to next storage location
+	return a_loc + 1;
+}
+/* int Instruction::LocationNextInstruction( int a_loc ) */ 
+
