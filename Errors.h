@@ -1,6 +1,5 @@
 //
-// Class to manage error reporting. Note: all members are static so we can access them anywhere.
-// What other choices do we have to accomplish the same thing?
+// Class to manage error reporting.
 //
 #ifndef _ERRORS_H
 #define _ERRORS_H
@@ -8,6 +7,7 @@
 #include <string>
 #include <vector>
 
+// class that holds errors while running the assembler
 class Errors {
 
 public:
@@ -23,8 +23,7 @@ public:
 
 private:
 
-    static vector<string> m_ErrorMsgs;  // This must be declared in the .cpp file.  Why?
-    									// There is an alternative: make this an inline variable.
-    									// This is a newer feature.  We will talk ablout it in class.
+    static vector<string> m_ErrorMsgs;  
+    									
 };
 #endif.have
