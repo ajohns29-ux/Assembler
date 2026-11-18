@@ -75,7 +75,7 @@ public:
     };
 
     // To determine if a label is blank.
-    inline bool isLabel( ) {
+    inline bool IsLabel( ) {
 
         return ! m_Label.empty();
     };
