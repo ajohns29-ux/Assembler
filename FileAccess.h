@@ -23,7 +23,7 @@ public:
     bool GetNextLine( string &a_line );
 
     // Put the file pointer back to the beginning of the file.
-    void rewind( );
+    void Rewind( );
 
 private:
 
