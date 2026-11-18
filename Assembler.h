@@ -14,6 +14,7 @@ class Assembler
 {
 
     public:
+
         Assembler( int argc, char *argv[] );
         ~Assembler( );
     
