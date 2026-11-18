@@ -65,6 +65,9 @@ public:
         // if anything else, go to next storage location
         return a_loc + 1;
     }
+    /* int LocationNextInstruction( int a_loc ) */ 
+
+
 
     // To access the label
     inline string &GetLabel( ) {
