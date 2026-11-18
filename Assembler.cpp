@@ -77,3 +77,5 @@ void Assembler::PassI()
         loc = m_inst.LocationNextInstruction( loc );
     }
 }
+/* void Assembler::PassI() */
+
