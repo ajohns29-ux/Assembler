@@ -99,7 +99,7 @@ private:
     bool m_IsNumericOperand1;// == true if the operand1 is numeric.  Operand 2 should never be numeric.
     int m_Operand1Value;   // The value of the operand1 if it is numeric.
 
-    string RemoveComment(const string &line);
-    bool ParseLine(string line, string &label, string& opcode, string& operand1, string &operand2 );
+    string RemoveComment(const string &a_line);
+    bool ParseLine(string a_line, string &a_label, string& a_opcode, string& a_operand1, string &a_operand2 );
 };
 
