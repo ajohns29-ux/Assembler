@@ -14,9 +14,6 @@ public:
     SymbolTable( ) {};
     ~SymbolTable( ) {};
 
-    // May need to remove??
-    const int multiplyDefinedSymbol = -999;
-
     // Add a new symbol to the symbol table.
     void AddSymbol( const string &a_symbol, int a_loc );
 
@@ -30,4 +27,8 @@ private:
 
     // This is the actual symbol table.  The symbol is the key to the map.  The value is the location.
     map<string, int> m_symbolTable;
+
+    // ORGINALLY IN PUBLIC MAY NEED TO MOVE BACK
+    const int multiplyDefinedSymbol = -999;
+
 };
