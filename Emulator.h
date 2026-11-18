@@ -31,7 +31,8 @@ public:
     
     */
     /**/
-    emulator() {
+    emulator() 
+    {
 
          m_memory.resize(MEMSZ, 0);
     }
@@ -97,18 +98,23 @@ public:
     /**/
     bool runProgram( )
     {
+        // each time the program runs, the location of the first instruction starts at 100
         int loc = 100;
+        
         while(true)
         {
             if(loc >= MEMSZ)
             {
                 // Complain and terminate
             }
+
+            // insert instruction into memory and define the parts of the instruction
             long long instr = m_memory[loc];
             int opcode = int(instr / 1'000'000'000LL);
             int operand1 = int(instr / 100'000 % 100'000);
             int operand2 = int(instr % 100'000);
 
+            // determine where next location will be in memory based on the opcode
             switch(opcode)
             {
                 case 1: 
