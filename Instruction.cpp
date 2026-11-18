@@ -71,9 +71,9 @@ NAME
 
 SYNOPSIS
 
-	string Instruction::RemoveComment(const string& line)
+	string Instruction::RemoveComment(const string& a_line)
 
-	&line -> current instruction that may have a comment
+	&a_line -> current instruction that may have a comment
 	
 DESRIPTION
 
@@ -85,19 +85,19 @@ RETURNS
 
 */
 /**/
-string Instruction::RemoveComment(const string& line) 
+string Instruction::RemoveComment(const string& a_line) 
 {
-    size_t pos = line.find(';');
+    size_t pos = a_line.find(';');
 
     if (pos == string::npos)
     {
-        return line;
+        return a_line;
     }
-    string temp = line;
+    string temp = a_line;
 
     return temp.erase(pos);
 }
-/* string Instruction::RemoveComment(const string& line) */ 
+/* string Instruction::RemoveComment(const string& a_line) */ 
 
 
 
@@ -110,13 +110,13 @@ NAME
 
 SYNOPSIS
 
-	bool Instruction::ParseLine(string line, string &label, string& opcode, string& operand1, string &operand2)
+	bool Instruction::ParseLine(string a_line, string &a_label, string& a_opcode, string& a_operand1, string &a_operand2)
 
-	line -> current line of instruction
-	&label -> variable to store the label of the instruction
-	&opcode -> variable to store the opcode of the instruction
-	&operand1 -> variable to store the first operand of the instruction
-	&operand2 -> variable to store the seconds operand of the instruction
+	a_line -> current line of instruction
+	&a_label -> variable to store the label of the instruction
+	&a_opcode -> variable to store the opcode of the instruction
+	&a_operand1 -> variable to store the first operand of the instruction
+	&a_operand2 -> variable to store the seconds operand of the instruction
 
 DESRIPTION
 
@@ -128,23 +128,28 @@ RETURNS
 
 */
 /**/
-bool Instruction::ParseLine(string line, string &label, string& opcode, string& operand1, string &operand2 )
+bool Instruction::ParseLine(string a_line, string &a_label, string& a_opcode, string& a_operand1, string &a_operand2 )
 {
 	// Replace commas with blanks.  I will leave this for you to figure out how to do it.
-	replace( line.begin(), line.end(), ',', ' ');
-	
-    istringstream ins(line);
-    label = opcode = operand1 = operand2 = "";
-    if (line.empty()) return true;
+	replace( a_line.begin(), a_line.end(), ',', ' ');
 
-    string extra;
+	// create istring stream object with line and declare string arguments 
+    istringstream ins(a_line);
+    a_label = a_opcode = a_operand1 = a_operand2 = "";
 
-    if (line[0] != ' ' && line[0] != '\t')
+	// if there is no instruction, nothing to parse
+    if (a_line.empty()) return true;
+
+    string extra = "";
+
+	// if first character is not a space or a tab, there is a label
+	// using istringstream object, retrieve the label, opcode, and operands
+    if (a_line[0] != ' ' && a_line[0] != '\t')
     {
-        ins >> label;
+        ins >> a_label;
     }
-    ins >> opcode >> operand1 >> operand2 >> extra;
+    ins >> a_opcode >> a_operand1 >> a_operand2 >> extra;
 
     return extra == "";
 }
-/* bool Instruction::ParseLine(string line, string &label, string& opcode, string& operand1, string &operand2 ) */ 
+/* bool Instruction::ParseLine(string a_line, string &a_label, string& a_opcode, string& a_operand1, string &a_operand2 ) */ 
