@@ -35,6 +35,8 @@ public:
 
          m_memory.resize(MEMSZ, 0);
     }
+    /*  emulator() */
+
 
     /**/
     /*
@@ -69,6 +71,8 @@ public:
         m_memory[a_location] = a_contents;
         return true;
     } 
+    /*     bool insertMemory( int a_location, long long a_contents ) */
+
 
     /**/
     /*
@@ -125,6 +129,7 @@ public:
             }
         }
     }
+    /*   bool runProgram( ) */
     
 
 private:
