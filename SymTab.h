@@ -5,7 +5,7 @@
 
 
 
-// This class is our symbol table.
+// Allows full details of symbols in assmbler to be in one place
 class SymbolTable {
 
 public:
