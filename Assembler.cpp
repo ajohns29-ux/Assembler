@@ -7,11 +7,11 @@
 
 // Constructor for the assembler.  Note: we are passing argc and argv to the file access constructor.
 // See main program.  
-Assembler::Assembler( int argc, char *argv[] )
-: m_facc( argc, argv )
+Assembler::Assembler( int argc, char *argv[] ) : m_facc( argc, argv )
 {
     // Nothing else to do here at this point.
 }  
+
 // Destructor currently does nothing.  You might need to add something as you develope this project.  If not, we can delete it.
 Assembler::~Assembler( )
 {
@@ -43,12 +43,12 @@ void Assembler::PassI()
     int loc = 0;        // Tracks the location of the instructions to be generated.
 
     // Successively process each line of source code.
-    for( ; ; ) {
-
+    for( ; ; ) 
+	{
         // Read the next line from the source file.
         string line; 
-        if( ! m_facc.GetNextLine( line ) ) {
-
+        if( ! m_facc.GetNextLine( line ) ) 
+		{
             // If there are no more lines, we are missing an end statement.
             // We will let this error be reported by Pass II.
             return;
@@ -70,8 +70,8 @@ void Assembler::PassI()
 		
         // If the instruction has a label, record it and its location in the
         // symbol table.
-        if( m_inst.IsLabel( ) ) {
-
+        if( m_inst.IsLabel( ) ) 
+		{
             m_symtab.AddSymbol( m_inst.GetLabel( ), loc );
         }
 		
