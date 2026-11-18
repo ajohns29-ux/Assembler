@@ -20,7 +20,7 @@ public:
     
     SYNOPSIS
     
-    	emulator()
+    	Emulator()
     
     DESRIPTION
     
@@ -37,7 +37,7 @@ public:
 
          m_memory.resize(MEMSZ, 0);
     }
-    /*  emulator() */
+    /*  Emulator() */
 
 
     /**/
