@@ -1,7 +1,7 @@
 //
 // Class to manage error reporting.
 //
-#ifndef _ERRORS_H
+#ifndef _ERRORS_H    // avoids multiple inclusions of Errors.h 
 #define _ERRORS_H
 
 #include <string>
