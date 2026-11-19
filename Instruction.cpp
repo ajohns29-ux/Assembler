@@ -33,7 +33,7 @@ Instruction::InstructionType Instruction::ParseInstruction( string a_line )
     string line = RemoveComment(a_line);
     
     // Break line into lable, opt code, and up two operands
-    ParseLine(line, m_Label, m_OpCode, m_Operand1, m_Operand2);
+    ParseLine(a_line, m_Label, m_OpCode, m_Operand1, m_Operand2);
 
 	// if there is no opt code, the instruction is a comment
     if(m_OpCode.empty() )
