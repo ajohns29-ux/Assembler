@@ -182,6 +182,7 @@ RETURNS
 int Instruction::LocationNextInstruction(int a_loc)
 {
 	// variable of operand1 as a integer
+	// what if x isn't a number
 	int opInt = stoi(m_Operand1);
 
 	// if define constant, allocate space 
