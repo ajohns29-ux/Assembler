@@ -181,22 +181,15 @@ RETURNS
 /**/
 int Instruction::LocationNextInstruction( int a_loc ) 
 {
-	// if label is ds, save space for label
-	if( m_Label == "DS")
+	// if define constant, allocate space 
+
+	// if org, go to address
+	if( m_opcode == 'ORG' )
 	{
-		// return a_loc + ;
+		return m_operand1; 
 	}
-	
-	// if opcode is b, go to location of operand 1
 
-	// if opcode is bm and operand 2 < 0, go to location of operand 1
-
-	// if opcode is bz and operand 2 = 0, go to location of operand 1
-
-	// if opcode is bp and operand 2 > 0, go to location of operand 1
-
-	// if anything else, go to next storage location
-	return a_loc + 1;
+	// if else, plus 1
 }
 /* int Instruction::LocationNextInstruction( int a_loc ) */ 
 
