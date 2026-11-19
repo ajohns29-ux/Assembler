@@ -1,3 +1,5 @@
+// Implementation of emulator functions 
+
 #include "stdafx.h"
 #include "Emulator.h"
 
