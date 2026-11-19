@@ -184,13 +184,13 @@ int Instruction::LocationNextInstruction( int a_loc )
 	// if define constant, allocate space 
 	if( m_opcode == 'DS' )
 	{
-		return a_loc + m_operand1;
+		return a_loc + m_Operand1;
 	}
 	
 	// if org, go to address
 	if( m_opcode == 'ORG' )
 	{
-		return m_operand1; 
+		return m_Operand1; 
 	}
 
 	// if else, plus 1
