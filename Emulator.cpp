@@ -83,21 +83,21 @@ bool Emulator::runProgram()
         // determine where next location will be in memory based on the opcode
         switch (opcode)
         {
-        case 1:
-            m_memory[operand1] += m_memory[operand2];
-            loc++;
-            continue;
-        case 10:
-            if (m_memory[operand2] < 0)
-            {
-                loc = operand1;
-            }
-            else
-            {
-                loc++;
-            }
-        default:
-            break;
+          case 1:
+              m_memory[operand1] += m_memory[operand2];
+              loc++;
+              continue;
+          case 10:
+              if (m_memory[operand2] < 0)
+              {
+                  loc = operand1;
+              }
+              else
+              {
+                  loc++;
+              }
+          default:
+              break;
         }
     }
 }
