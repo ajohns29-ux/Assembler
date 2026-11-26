@@ -128,7 +128,7 @@ SYNOPSIS
 
 DESRIPTION
 
-	This function displays the symbol table that is associated with the current assembler object
+	This function displays the symbols in the symbol table for the current Assembler.
 
 RETURNS
 
@@ -136,7 +136,6 @@ RETURNS
 
 */
 /**/
-// Display the symbols in the symbol table.
 void Assembler::DisplaySymbolTable() 
 { 
 	m_symtab.DisplaySymbolTable(); 
