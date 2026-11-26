@@ -83,3 +83,32 @@ void Assembler::PassI()
 }
 /* void Assembler::PassI() */
 
+
+
+
+/**/
+/*
+
+NAME	
+
+	Assmbler::PassII()
+
+SYNOPSIS
+
+	void Assembler::PassII()
+
+DESRIPTION
+
+	This function 
+
+RETURNS
+
+	No return value
+
+*/
+/**/
+void Assembler::PassII()
+{
+	cout << "This is PassII" << endl;
+}
+/* void Assembler::PassII() */
