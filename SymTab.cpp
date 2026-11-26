@@ -35,7 +35,7 @@ void SymbolTable::AddSymbol( const string &a_symbol, const int a_loc )
         st->second = multiplyDefinedSymbol;
         return;
     }
-    // Record a the  location in the symbol table.
+    // Record a the location in the symbol table.
     m_symbolTable[a_symbol] = a_loc;
 }
 /* void SymbolTable::AddSymbol( const string &a_symbol, int a_loc ) */
