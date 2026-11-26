@@ -68,10 +68,10 @@ void SymbolTable::DisplaySymbolTable( )
     int symbolNumber = 0;
 
     // print the columns of the symbol table along with the conents of the map using the iterator
-    cout << format("{:<40}{:^40}{:>40}", "Symbol #", "Symbol", "Location") << endl;
+    cout << format("{:<15}{:^15}{:>15}", "Symbol #", "Symbol", "Location") << endl;
     for(auto p = m_SymbolTable.cbegin(); p != m_SymbolTable.cend(); p++)
     {   
-        cout << format("{:<40}{:^40}{:>40}", symbolNumber, p->first, p->second) << endl;
+        cout << format("{:<15}{:^15}{:>15}", symbolNumber, p->first, p->second) << endl;
         symbolNumber++;       
     }
 }
