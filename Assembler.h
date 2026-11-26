@@ -28,10 +28,7 @@ class Assembler
         void DisplaySymbolTable();
         
         // Run emulator on the translation.
-        void RunProgramInEmulator()
-        {
-            cout << "AIDAN" << endl;
-        }
+        void RunProgramInEmulator();
     
     private:
     
