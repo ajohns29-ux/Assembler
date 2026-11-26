@@ -25,7 +25,10 @@ class Assembler
         void PassII() { cout << "TO DO" << endl; }
     
         // Display the symbols in the symbol table.
-        void DisplaySymbolTable() { m_symtab.DisplaySymbolTable(); }
+        void DisplaySymbolTable() 
+        { 
+            m_symtab.DisplaySymbolTable(); 
+        }
         
         // Run emulator on the translation.
         void RunProgramInEmulator()
