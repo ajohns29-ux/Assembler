@@ -25,10 +25,7 @@ class Assembler
         void PassII();
     
         // Display the symbols in the symbol table.
-        void DisplaySymbolTable() 
-        { 
-            m_symtab.DisplaySymbolTable(); 
-        }
+        void DisplaySymbolTable();
         
         // Run emulator on the translation.
         void RunProgramInEmulator()
