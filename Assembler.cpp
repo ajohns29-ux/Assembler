@@ -112,3 +112,33 @@ void Assembler::PassII()
 	cout << "This is PassII" << endl;
 }
 /* void Assembler::PassII() */
+
+
+
+/**/
+/*
+
+NAME	
+
+	Assmbler::DisplaySymbolTable()
+
+SYNOPSIS
+
+	void Assembler::DisplaySymbolTable()
+
+DESRIPTION
+
+	This function displays the symbol table that is associated with the current assembler object
+
+RETURNS
+
+	No return value
+
+*/
+/**/
+// Display the symbols in the symbol table.
+void Assembler::DisplaySymbolTable() 
+{ 
+	m_symtab.DisplaySymbolTable(); 
+}
+/* void Assembler::DisplaySymbolTable() */
