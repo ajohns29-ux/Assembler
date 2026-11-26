@@ -63,6 +63,11 @@ RETURNS
 */
 void SymbolTable::DisplaySymbolTable( )
 {
-    
+    // define constant iterator and go through the map of symbols and locations
+    map<string, int>::const_iterator p;
+    for(p = m_SymbolTable.cbegin(); p != m_SymbolTable.cend(); p++)
+    {
+        
+    }
 }
 /*  void SymbolTable::DisplaySymbolTable() */
