@@ -69,7 +69,7 @@ void SymbolTable::DisplaySymbolTable( )
 
     // print the columns of the symbol table along with the conents of the map using the iterator
     cout << "Symbol #     Symbol     Location" << endl;
-    for(p = m_SymbolTable.cbegin(); p != m_SymbolTable.cend(); p++)
+    for(auto p = m_SymbolTable.cbegin(); p != m_SymbolTable.cend(); p++)
     {   
         cout << format("{:<32}{:^32}{:>32}", symbolNumber, p->first, p->second) << endl;
         symbolNumber++;       
