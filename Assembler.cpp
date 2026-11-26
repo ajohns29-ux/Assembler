@@ -141,3 +141,30 @@ void Assembler::DisplaySymbolTable()
 	m_symtab.DisplaySymbolTable(); 
 }
 /* void Assembler::DisplaySymbolTable() */
+
+
+/**/
+/*
+
+NAME	
+
+	Assmbler::RunProgrsmInEmulator()
+
+SYNOPSIS
+
+	void Assembler::RunProgramInEmulator()
+
+DESRIPTION
+
+	This function emulates the program and allows for the VC1620 to run machine language code.
+
+RETURNS
+
+	No return value
+
+*/
+/**/
+void Assembler::RunProgramInEmulator()
+{
+	cout << "This is RunProgramInEmulator" << endl;
+}
