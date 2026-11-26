@@ -99,7 +99,7 @@ SYNOPSIS
 
 DESRIPTION
 
-	This function 
+	This function runs the progam with the symbols and their locations known.
 
 RETURNS
 
