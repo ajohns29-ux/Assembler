@@ -40,3 +40,28 @@ void SymbolTable::AddSymbol( const string &a_symbol, const int a_loc )
     m_symbolTable[a_symbol] = a_loc;
 }
 /* void SymbolTable::AddSymbol( const string &a_symbol, int a_loc ) */
+
+
+
+/*
+NAME
+
+    SymbolTable::DisplaySymbolTable()
+
+SYNOPSIS
+
+    void SymbolTable::DisplaySymbolTable()
+
+DESCRIPTION
+
+    This function displays a table with each symbol along with its location in memory.
+
+RETURNS
+
+    No return value
+
+*/
+void SymbolTable::DisplaySymbolTable( )
+{
+    
+}
