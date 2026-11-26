@@ -54,7 +54,7 @@ SYNOPSIS
 
 DESCRIPTION
 
-    This function displays a table with each symbol along with its location in memory.
+    This function displays a table with each symbol along with its location.
 
 RETURNS
 
@@ -65,3 +65,4 @@ void SymbolTable::DisplaySymbolTable( )
 {
     
 }
+/*  void SymbolTable::DisplaySymbolTable() */
