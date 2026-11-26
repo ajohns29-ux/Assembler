@@ -63,12 +63,16 @@ RETURNS
 */
 void SymbolTable::DisplaySymbolTable( )
 {
-    // define constant iterator and go through the map of symbols and locations
+    // define constant iterator and variable to count and print the symbol number 
     map<string, int>::const_iterator p;
     int symbolNumber = 0;
+
+    // print the columns of the symbol table along with the conents of the map using the iterator
+    cout << "Symbol #     Symbol     Location" << endl;
     for(p = m_SymbolTable.cbegin(); p != m_SymbolTable.cend(); p++)
-    {
-        
+    {   
+        cout << format("{:<32}{:^32}{:>32}", symbolNumber, p->first, p->second) << endl;
+        symbolNumber++;       
     }
 }
 /*  void SymbolTable::DisplaySymbolTable() */
