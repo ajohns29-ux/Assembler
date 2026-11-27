@@ -67,8 +67,6 @@ void Assembler::PassI()
         {
         	continue;
 	    }
-
-		// if instruction is machine language, error?
 		
         // If the instruction has a label, record it and its location in the
         // symbol table.
