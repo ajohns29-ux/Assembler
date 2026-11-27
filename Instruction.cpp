@@ -249,6 +249,18 @@ RETURNS
 /**/
 int Instruction::LocationNextInstruction(int a_loc)
 {	
+	// check if the first operand is a value or a label 
+	if( m_Operand1[0].isdigit() )
+	{
+		// operand 1 is a digit, translate to integer
+		int opInt = stoi(m_Operand1);
+	}
+	else
+	{
+		// operand 1 is a real string, find address
+		
+	}
+	
 	// if define constant, allocate space 
 	if (m_OpCode == "DS")
 	{
