@@ -4,10 +4,32 @@
 #include "Emulator.h"
 
 
+/**/
+  /*
+
+  NAME
+
+    Emulator::Emulator()
+
+  SYNOPSIS
+
+     Emulator::Emulator()
+
+  DESRIPTION
+
+      This function is a constructor that resizes the emulator to have 100000 spaces all set to 0.
+
+  RETURNS
+
+     No return value.
+     
+  */
+  /**/
 Emulator::Emulator()
 {
      m_memory.resize(MEMSZ, 0);
 }
+/* Emulator::Emulator() */
 
 
 
