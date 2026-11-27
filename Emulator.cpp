@@ -4,6 +4,14 @@
 #include "Emulator.h"
 
 
+Emulator::Emulator()
+{
+     m_memory.resize(MEMSZ, 0);
+}
+
+
+
+
 /**/
   /*
 
