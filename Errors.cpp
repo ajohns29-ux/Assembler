@@ -46,11 +46,11 @@ static void Errors::DisplayErrors( )
 
      static void Errors::RecordError( string a_emsg )
 
-     a_emsg -> a string that will be added to the error vector
+     a_emsg -> an error message that will be added to the vector of errors
 
   DESRIPTION
 
-      This function takes an error and adds it to an vector of errors. 
+      This function takes an error message and adds it to an vector of errors. 
       
   RETURNS
 
