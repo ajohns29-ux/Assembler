@@ -50,7 +50,7 @@ static void Errors::DisplayErrors( )
 
   DESRIPTION
 
-      This function takes an error message and adds it to an vector of errors. 
+      This function takes an error message and records it to an vector of errors. 
       
   RETURNS
 
@@ -58,7 +58,6 @@ static void Errors::DisplayErrors( )
      
   */
   /**/
-// Records an error message.
 static void Errors::RecordError( string a_emsg )
 {
     cout << "This is the RecordError function" << endl;
