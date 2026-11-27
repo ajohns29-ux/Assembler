@@ -18,15 +18,13 @@ vector<string> Errors::m_ErrorMsgs;
 
   DESRIPTION
 
-      This function displays all the errors logged while running the assembler.
-
+      This function displays the collected error messages.
   RETURNS
 
      No return value.
      
   */
   /**/
-// Displays the collected error message.
 static void Errors::DisplayErrors( )
 {
     cout << "This is Display Errors function" << endl;
