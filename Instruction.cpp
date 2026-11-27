@@ -4,6 +4,68 @@
 #include <string>
 #include <algorithm>
 
+
+/**/
+/*
+
+NAME
+
+	Instruction::Instruction()
+
+SYNOPSIS
+
+	Instruction::Instruction()
+
+DESRIPTION
+
+	This function is a constructor to initialize a instruction object.
+
+RETURNS
+
+	No return value.
+
+*/
+/**/
+Instruction::Instruction( )
+{
+	
+}
+/* Instruction::Instruction() */
+
+
+
+
+/**/
+/*
+
+NAME
+
+	Instruction::~Instructor()
+
+SYNOPSIS
+
+	Instruction::~Instruction()
+
+DESRIPTION
+
+	This function is a deconstructor for the instruction class. 
+
+RETURNS
+
+	No return value.
+
+*/
+/**/
+Instruction::~Instruction( )
+{
+	
+}
+/* Instruction::~Instruction() */
+
+
+
+
+
 /**/
 /*
 
@@ -101,6 +163,7 @@ string Instruction::RemoveComment(const string& a_line)
 
 
 
+
 /**/
 /*
 
@@ -153,6 +216,7 @@ bool Instruction::ParseLine(string a_line, string& a_label, string& a_opcode, st
 	return extra == "";
 }
 /* bool Instruction::ParseLine(string a_line, string &a_label, string& a_opcode, string& a_operand1, string &a_operand2 ) */
+
 
 
 
