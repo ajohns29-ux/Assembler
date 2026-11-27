@@ -39,15 +39,18 @@ static void Errors::DisplayErrors( )
 
   NAME
 
-    Errors:DisplayErrors()
+    Errors:RecordError()
 
   SYNOPSIS
 
-     static void Errors::DisplayErrors()
+     static void Errors::RecordError( string a_emsg )
+
+     a_emsg -> a string that will be added to the error array.
 
   DESRIPTION
 
-      This function displays the collected error messages.
+      This function takes an error and adds it to an array of errors. 
+      
   RETURNS
 
      No return value.
@@ -55,7 +58,7 @@ static void Errors::DisplayErrors( )
   */
   /**/
 // Records an error message.
-static void RecordError( string a_emsg )
+static void Errors::RecordError( string a_emsg )
 {
     cout << "This is the RecordError function" << endl;
 }
