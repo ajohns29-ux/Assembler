@@ -76,3 +76,33 @@ void SymbolTable::DisplaySymbolTable( )
     }
 }
 /*  void SymbolTable::DisplaySymbolTable() */
+
+
+
+
+/*
+NAME
+
+    SymbolTable::LookupSymbol()
+
+SYNOPSIS
+
+    bool SymbolTable::LookupSymbol( const string &a_symbol, int &a_loc )
+
+    &a_symbol -> the symbol that is going to be looked up 
+    &a_loc -> the location that the symbol is found in
+
+DESCRIPTION
+
+    This function looks up a symbol in the symbol table and stores the location inside a_loc.
+
+RETURNS
+
+    Returns true if the symbol exists, returns false if it does not.
+
+*/
+bool SymbolTable::LookupSymbol( const string &a_symbol, int &a_loc ) 
+{
+    cout << "This is the LookupSymbol function" << endl;
+}
+/* bool SymbolTable::LookupSymbol( const string &a_symbol, int &a_loc) */
