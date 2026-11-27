@@ -19,6 +19,7 @@ vector<string> Errors::m_ErrorMsgs;
   DESRIPTION
 
       This function displays the collected error messages.
+      
   RETURNS
 
      No return value.
@@ -45,11 +46,11 @@ static void Errors::DisplayErrors( )
 
      static void Errors::RecordError( string a_emsg )
 
-     a_emsg -> a string that will be added to the error array.
+     a_emsg -> a string that will be added to the error vector
 
   DESRIPTION
 
-      This function takes an error and adds it to an array of errors. 
+      This function takes an error and adds it to an vector of errors. 
       
   RETURNS
 
